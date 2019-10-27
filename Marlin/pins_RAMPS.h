@@ -161,23 +161,23 @@
    * Software serial
    */
 
-  #define X_SERIAL_TX_PIN    40
+  #define X_SERIAL_TX_PIN    59
   #define X_SERIAL_RX_PIN    63
   #define X2_SERIAL_TX_PIN   -1
   #define X2_SERIAL_RX_PIN   -1
 
-  #define Y_SERIAL_TX_PIN    59
-  #define Y_SERIAL_RX_PIN    64
+  #define Y_SERIAL_TX_PIN    64
+  #define Y_SERIAL_RX_PIN    40
   #define Y2_SERIAL_TX_PIN   -1
   #define Y2_SERIAL_RX_PIN   -1
 
-  #define Z_SERIAL_TX_PIN    42
-  #define Z_SERIAL_RX_PIN    65
+  #define Z_SERIAL_TX_PIN    44
+  #define Z_SERIAL_RX_PIN    42
   #define Z2_SERIAL_TX_PIN   -1
   #define Z2_SERIAL_RX_PIN   -1
 
-  #define E0_SERIAL_TX_PIN   44
-  #define E0_SERIAL_RX_PIN   66
+  #define E0_SERIAL_TX_PIN   66
+  #define E0_SERIAL_RX_PIN   65
   #define E1_SERIAL_TX_PIN   -1
   #define E1_SERIAL_RX_PIN   -1
   #define E2_SERIAL_TX_PIN   -1
@@ -509,16 +509,16 @@
       #define BTN_ENC           35
 
       #define SD_DETECT_PIN     49
-      #define KILL_PIN          41
+      #define KILL_PIN          64
 
     #elif ENABLED(MINIPANEL)
 
-      #define BEEPER_PIN        42
+      #define BEEPER_PIN        37 //42
       // not connected to a pin
       #define LCD_BACKLIGHT_PIN 65   // backlight LED on A11/D65
 
-      #define DOGLCD_A0         44
-      #define DOGLCD_CS         66
+      #define DOGLCD_A0         27 //44
+      #define DOGLCD_CS         25 //66
 
       // GLCD features
       //#define LCD_CONTRAST   190
@@ -527,10 +527,11 @@
       //#define LCD_SCREEN_ROT_180
       //#define LCD_SCREEN_ROT_270
 
-      #define BTN_EN1           40
-      #define BTN_EN2           63
-      #define BTN_ENC           59
+      #define BTN_EN1           31 //40
+      #define BTN_EN2           33 //63
+      #define BTN_ENC           35 //59
 
+      #define SDSS              53
       #define SD_DETECT_PIN     49
       #define KILL_PIN          64
 
